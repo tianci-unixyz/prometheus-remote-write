@@ -1,8 +1,12 @@
+name: Hello World Workflow
+
 on:
   workflow_dispatch:
 
 jobs:
   my_job:
-    name: deploy to staging
+    name: Print Hello World
     runs-on: ubuntu-22.04
-    run: echo "hi"
+    steps:
+      - name: Output Hello World
+        run: echo "hello world"
